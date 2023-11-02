@@ -5,12 +5,22 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>QR - scanner</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<div class="w-full h-screen bg-gray-200 flex justify-center items-center ">
+			<div class="flex justify-center items-center flex-col w-1/5 h-3/5 bg-white rounded-xl p-2">
+				<div class="w-56 h-56 bg-red-500 rounded-xl overflow-hidden">
+					<img src="/image-qr-code.png" alt="QR Image">
+				</div>
+				<div class="w-56 h-auto">
+					<h2 class="text-center font-bold mb-4 mt-4">Improve your front-end skills by building projects</h2>
+					<p class="text-center font-thin text-sm">Scan the QR Code to visit front-end mentor and take your coding skills to the next level</p>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
